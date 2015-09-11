@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="introAng">
+<head>
+	<meta charset="utf-8">
+	<title>JS4.1 Intro to Angular: Part I - III</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="wrapper" ng-controller="mainController">
+		<div>
+			<h1>Part 1</h1>
+			<button ng-click="buttonClick($event)">Click!</button>
+				<h1 ng-show="bodyMessage">"Hi There. Hi There. Hi There. Hi There. Hi There. Hi There."</h1>
+
+			<button ng-click="listClick($event)">View more info...</button>
+				<ul ng-show="list">
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+					<li>Item 5</li>
+				</ul>
+		</div>
+		<hr>
+		
+		<div>
+			<h1 ng-click="titleClick($event)">Part 2 {{userName}}!</h1>
+				<section ng-class="{color: colorChange['one']}" ng-mouseenter="hover(colorChange,'one')" ng-mouseleave="hover(colorChange,'one')">
+				<h2>Paragraph One</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor urna non purus feugiat malesuada. Nulla eu quam consequat, placerat felis in, efficitur turpis. Nullam ut odio vitae enim venenatis pretium ut et nunc. Ut ut nibh eget nunc maximus finibus. Vestibulum venenatis viverra metus quis placerat. <a ng-hide="linkHide" ng-click="clickConfirm($event)" href="http://class.refactoru.com">Let's just stay right here!</a> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum at ex ligula. Aliquam scelerisque semper dolor eu egestas. Morbi dapibus enim a nulla feugiat, a fringilla sapien viverra. Donec bibendum rutrum massa, eu ullamcorper lacus rhoncus mattis. Quisque ac sem elit. Proin maximus eros sit amet porta efficitur. Maecenas justo ante, posuere sit amet volutpat vitae, consectetur sit amet dolor. Mauris porttitor felis sed nibh hendrerit, sit amet feugiat tortor aliquet. Curabitur id dapibus velit. Pellentesque cursus a nibh vel euismod.</p></section>
+
+				<section ng-class="{colorTwo: colorChange['two']}" ng-mouseenter="hover(colorChange,'two')" ng-mouseleave="hover(colorChange,'two')">
+				<h2>Paragraph Two</h2>
+				<p>Mauris vestibulum rhoncus ante vitae auctor. Maecenas euismod fermentum nibh eu tempor. Maecenas et libero eros. Aenean ut eleifend est. Donec fermentum commodo dui sit amet volutpat. Suspendisse potenti. <a href="http://class.refactoru.com/course/wyffpX8YffA6pmaeH/exercise/bZfgnmqP8xcLTQsAZ">Instructions</a> Donec orci urna, consequat ac eleifend nec, consectetur nec risus. Donec sed laoreet neque. Nunc lacus ex, sollicitudin non orci ac, vehicula volutpat felis. Pellentesque vitae semper sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam varius laoreet lacus, eu luctus enim dignissim quis. Nunc tortor elit, placerat vitae nisl quis, sollicitudin facilisis ligula. Morbi leo risus, tempus at lacus eget, suscipit consectetur velit. Nulla molestie enim vel ullamcorper finibus. Pellentesque placerat aliquet arcu, at placerat metus.</p></section>
+
+				<section ng-class="{colorThree: colorChange['three']}" ng-mouseenter="hover(colorChange,'three')" ng-mouseleave="hover(colorChange,'three')">
+				<h2>Paragraph Three</h2>
+				<p>Aliquam faucibus orci in massa molestie, luctus consectetur ligula feugiat. Nunc elementum in est in pellentesque. Aenean imperdiet leo est, a suscipit diam congue a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam viverra, <a href="https://docs.angularjs.org/api/ngAnimate">Angular Amimate info</a> tellus at eleifend sodales, turpis tellus eleifend leo, nec sollicitudin est risus et metus. Sed pretium rhoncus aliquet. Mauris risus ipsum, scelerisque a bibendum id, dictum eget mauris. Nullam a risus non eros cursus malesuada. Morbi blandit egestas odio, et molestie arcu gravida nec. Aenean justo ante, convallis in lacinia nec, sagittis sit amet metus.</p>
+				</section>
+		</div>
+		<hr>
+		<div>
+			<h1>Part 3</h1>
+	</div> <!-- closes wrapper -->
+
+
+	<script src="main.js" type="text/javascript"></script>
+</body>
+</html>

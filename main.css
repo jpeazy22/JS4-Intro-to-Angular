@@ -1,0 +1,35 @@
+button {
+	width: 96%;
+	height: 75px;
+	background-color: IndianRed;
+	color: DarkSlateGrey;
+	margin: 2%;
+	font-size: 20px;
+	padding: 2%;
+	border-radius: 5px;
+	/*border: 1px dashed DarkOrchid;*/
+	box-shadow: .5px .5px 1px DarkGrey;
+}
+
+button:hover {
+	opacity: .8;
+}
+
+.color {
+	color: IndianRed;
+}
+
+.colorTwo {
+	color: IndianRed;
+}
+
+.colorThree {
+	color: IndianRed;
+}
+
+section {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 1%;
+}
